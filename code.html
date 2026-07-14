@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <!-- Font Awesome 6 图标库（用于社交图标） -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>霍一韩 · Yihan Huo · 个人主页</title>
+    <title>霍一韩 · 代码与技能</title>
 
-    <!-- 主题样式（来自 Tyler 原模板） -->
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
@@ -15,196 +13,137 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Google Analytics 4（请替换为自己的追踪ID） -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    // 请将下面的 '你的用户名' 替换为您的 GitHub 用户名
     if (window.location.hostname === '你的用户名.github.io') {
       gtag('config', '你的追踪ID');
     }
     </script>
 
-    <!-- Academicons（学术图标，如 Google Scholar） -->
     <link rel="stylesheet" href="assets/css/academicons.min.css"/>
     <link rel="stylesheet" href="assets/css/academicons.css"/>
     
-    <!-- 自定义样式：双语段落、折叠面板（保留以备后用） -->
     <style>
-      /* 双语段落：英文使用浅灰色斜体 */
-      .bilingual p {
-        margin: 0.2em 0;
-      }
-      .bilingual .en {
-        color: #555;
-        font-style: italic;
-      }
-      /* 折叠面板（若需要展开详情可复用） */
       button.accordion {
-        font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        cursor: pointer;
-        padding: 0px;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 100%;
-        transition: 0.3s;
-        background-color: #f8f8f8;
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.3s;
+      background-color: #f8f8f8;
       }
       button.accordion.active, button.accordion:hover {
-        background-color: #f8f8f8;
+      background-color: #f8f8f8;
       }
       button.accordion:after {
-        content: " [+] ";
-        font-size: 90%;
-        color:#777;
-        float: left;
-        margin-left: 1px;
+      content: " [+] ";
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
       }
       button.accordion.active:after {
-        content: " [\2212] ";
+      content: " [\2212] ";
       }
       div.panel {
-        padding: 0 20px;
-        margin-top: 5px;
-        display: none;
-        background-color: white;
-        font-size: 100%;
+      padding: 0 20px;
+      margin-top: 5px;
+      display: none;
+      background-color: white;
+      font-size: 100%;
       }
       div.panel.show {
-        display: block !important;
+      display: block !important;
       }
       .social-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
       }
+      .bilingual .en {
+        color: #555;
+        font-style: italic;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <!-- ==================== 侧边栏 ==================== -->
       <header>
-        <!-- 个人头像（可选，若无图片可删除或注释掉） -->
-        <!-- <img src="assets/photo.jpg" alt="霍一韩 Yihan Huo" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:10px;"> -->
         <h1>霍一韩 Yihan Huo</h1>
-        <!-- 身份信息（中英对照） -->
-        <p>南京信息工程大学 · 地理信息科学 本科生<br>
-        Nanjing University of Information Science & Technology · B.S. in Geographic Information Science</p>
-        <p>双一流学科 · GPA 3.55/4 · 综合排名 11/79<br>
-        Double First-Class Discipline · GPA 3.55/4 · Overall Ranking 11/79</p>
-        <p>已获推免资格 · 研究方向：GIS时空分析、生态环境遥感评估<br>
-        Recommended for graduate admission · Research: GIS spatiotemporal analysis, remote sensing for ecological assessment</p>
-
-        <!-- 导航菜单（与 Tyler 主页一致） -->
+        <p>南京信息工程大学 · 地理信息科学 本科生</p>
+        <p>双一流学科 · GPA 3.55/4 · 综合排名 11/79</p>
+        <p>已获推免资格 · 研究方向：GIS时空分析、生态环境遥感评估</p>
         <h3><a href="index.html">主页 Home</a></h3>
         <h3><a href="research.html">研究 Research</a></h3>
         <h3><a href="research/CV.pdf">简历 CV (PDF)</a></h3>  
         <h3><a href="code.html">代码 Code</a></h3> 
         <h3><a href="teaching.html">教学 Teaching</a></h3> 
         <h3><a href="personal.html">个人 Personal</a></h3>
-
-        <!-- 社交链接 -->
-        <b>社交 Social</b><br>
+        <b>Social</b><br>
         <div class="social-row">
           <a href="mailto:202183670038@nuist.edu.cn" class="author-social" target="_blank"><i class="fas fa-fw fa-envelope"></i> 邮箱 Email</a><br>
           <a href="https://github.com/你的GitHub用户名" target="_blank"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
-          <!-- 若有其他学术账号可解除注释 -->
-          <!-- <a href="https://scholar.google.com/..." target="_blank"><i class="ai ai-fw ai-google-scholar"></i> Scholar</a><br> -->
-          <!-- <a href="https://orcid.org/..." target="_blank"><i class="ai ai-fw ai-orcid"></i> ORCID</a><br> -->
           <br>
         </div>
         <br>
-
-        <!-- 联系地址 -->
-        <p><b>联系地址 Contact:</b><br>
-        南京信息工程大学 地理科学学院<br>
-        江苏省南京市宁六路219号 · 邮编：210044<br>
-        School of Geographical Sciences, NUIST<br>
-        219 Ningliu Road, Nanjing, Jiangsu, 210044, China</p>
-        <p><small>托管于 GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><b>联系地址 Contact:</b><br>南京信息工程大学 地理科学学院<br>江苏省南京市宁六路219号 · 邮编：210044<br>School of Geographical Sciences, NUIST<br>219 Ningliu Road, Nanjing, Jiangsu, 210044, China</p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </header>
-
-      <!-- ==================== 主体内容 ==================== -->
       <section>
-        <!-- 1. 个人简介（长篇幅，类似 Tyler 的自我介绍） -->
-        <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于我 · About Me</h2>
-        <div class="bilingual">
-          <p>我是一名地理信息科学专业的本科生，就读于南京信息工程大学（双一流学科）。我对GIS时空分析、生态环境遥感评估以及多因子建模具有浓厚兴趣。在本科期间，我以第一负责人身份完成了多项科研项目和学科竞赛，积累了丰富的实践经验。我熟练掌握ArcGIS、Supermap、MapGIS等GIS软件，以及R、Python、MATLAB等编程语言，能够独立完成数据处理、空间分析和建模工作。</p>
-          <p class="en">I am an undergraduate student in Geographic Information Science at Nanjing University of Information Science & Technology (a Double First-Class discipline). I have a strong interest in GIS spatiotemporal analysis, remote sensing for ecological assessment, and multi-factor modeling. During my undergraduate studies, I served as the principal investigator for multiple research projects and academic competitions, gaining extensive practical experience. I am proficient in ArcGIS, Supermap, MapGIS, as well as programming languages such as R, Python, and MATLAB, enabling me to independently conduct data processing, spatial analysis, and modeling.</p>
-          <br>
-          <p>我的研究兴趣主要集中在干旱区生态环境评估、土壤侵蚀时空变化归因以及气候变化对水资源的影响。我曾基于CMIP6模型对和田河流域进行多因子生态分析，并利用SPI指数研究黄河流域的干旱时空演变。目前，我正在完成题为“重庆市土壤侵蚀时空变化与归因”的毕业论文，旨在为区域水土保持提供科学依据。</p>
-          <p class="en">My research interests focus on ecological assessment in arid areas, attribution of spatiotemporal changes in soil erosion, and the impact of climate change on water resources. I have conducted multi-factor ecological analysis of the Hetian River Basin based on CMIP6 models and studied drought spatiotemporal evolution in the Yellow River Basin using the SPI index. Currently, I am completing my undergraduate thesis titled "Spatiotemporal Changes and Attribution of Soil Erosion in Chongqing," aiming to provide scientific evidence for regional soil and water conservation.</p>
-          <br>
-          <p>除了学术研究，我积极参与课外活动与志愿服务。我曾担任游泳协会秘书部部长，组织急救知识普及活动；作为Supermap校园大使，推广GIS竞赛；还担任学生助理，负责多媒体设备维护，累计志愿服务时长超过200小时。这些经历锻炼了我的组织协调能力和团队合作精神。</p>
-          <p class="en">Beyond academic research, I actively participate in extracurricular activities and volunteer work. I served as Secretary of the Swimming Association, organizing first-aid knowledge activities; acted as Supermap Campus Ambassador, promoting GIS competitions; and worked as a student assistant maintaining multimedia equipment, accumulating over 200 volunteer hours. These experiences have honed my organizational and teamwork skills.</p>
-        </div>
+        <h2>编程与软件技能 · Programming & Software Skills</h2>
+        <p>我熟练掌握以下编程语言和GIS软件，并用于科研和项目开发。</p>
+        <p class="en">I am proficient in the following programming languages and GIS software, which I use for research and project development.</p>
 
-        <!-- 2. 教育背景（简要） -->
-        <h2><a id="education" class="anchor" href="#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>教育 · Education</h2>
+        <h3>编程语言 Programming Languages</h3>
         <ul>
-          <li><strong>南京信息工程大学（双一流）</strong> 地理信息科学 本科，2021.09 – 2025.06<br>
-          <strong>Nanjing University of Information Science & Technology (Double First-Class)</strong> B.S. in Geographic Information Science, Sep 2021 – Jun 2025<br>
-          GPA: 3.55/4，综合排名：11/79 &nbsp;|&nbsp; GPA: 3.55/4, Overall Ranking: 11/79<br>
-          核心课程：GIS算法基础(98)、GIS二次开发(95)、GIS可视化开发语言(94)等15门专业课程≥90分<br>
-          Core Courses: GIS Algorithm Fundamentals (98), GIS Secondary Development (95), GIS Visualization Language (94), with 15 specialized courses scoring 90+<br>
-          荣誉：多次获校二等三好学生奖学金、先进个人<br>
-          Honors: Multiple Second-Class Merit Scholarships, Advanced Individual Awards</li>
+          <li><strong>R</strong> – 数据处理、统计分析、地理探测器修改</li>
+          <li class="en">Data processing, statistical analysis, geographical detector modification</li>
+          <li><strong>Python</strong> – 数据处理、自动化脚本</li>
+          <li class="en">Data processing, automation scripts</li>
+          <li><strong>MATLAB</strong> – 数值计算、数据分析</li>
+          <li class="en">Numerical computation, data analysis</li>
         </ul>
 
-        <!-- 3. 代表性项目（简洁列举，可展开） -->
-        <h2><a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>代表性项目 · Selected Projects</h2>
+        <h3>GIS 软件 GIS Software</h3>
         <ul>
-          <li><strong>和田河流域生态环境多因子评估</strong>（大学生创新创业项目，第一负责人，2023-2024）<br>
-          <span class="en"><strong>Multi-factor Ecological Assessment of Hetian River Basin</strong> (Undergraduate Innovation Program, PI, 2023-2024)</span></li>
-          <li><strong>黄河流域干旱时空分析</strong>（“共享杯”竞赛论文，第一负责人，2023）<br>
-          <span class="en"><strong>Spatiotemporal Drought Analysis of Yellow River Basin</strong> ("Shared Cup" Competition Paper, PI, 2023)</span></li>
-          <li><strong>重庆市土壤侵蚀时空变化与归因</strong>（毕业设计，在研，2024-2025）<br>
-          <span class="en"><strong>Spatiotemporal Changes and Attribution of Soil Erosion in Chongqing</strong> (Undergraduate Thesis, ongoing, 2024-2025)</span></li>
+          <li><strong>ArcGIS</strong> – 空间分析、制图、遥感数据处理</li>
+          <li class="en">Spatial analysis, mapping, remote sensing data processing</li>
+          <li><strong>Supermap</strong> – 地理信息系统开发与应用</li>
+          <li class="en">GIS development and application</li>
+          <li><strong>MapGIS</strong> – 制图与空间分析（持有制图工程师证书）</li>
+          <li class="en">Mapping and spatial analysis (certified MapGIS Cartographic Engineer)</li>
         </ul>
 
-        <!-- 4. 获奖情况（简要） -->
-        <h2><a id="awards" class="anchor" href="#awards" aria-hidden="true"><span class="octicon octicon-link"></span></a>获奖 · Awards</h2>
-        <ul>
-          <li>第四届信息技术服务业应用技能大赛 个人一等奖、团体二等奖/三等奖（团队负责人） – 2024<br>
-          <span class="en">4th Information Technology Service Application Skills Competition: First Prize (individual), Second & Third Prizes (team, as leader) – 2024</span></li>
-          <li>第十五届全国高校GIS技能大赛 操作赛道三等奖 – 2023<br>
-          <span class="en">15th National GIS Skills Competition for Colleges: Third Prize (Operation Track) – 2023</span></li>
-          <li>Supermap杯高校GIS大赛 优秀奖 – 2023<br>
-          <span class="en">Supermap Cup College GIS Competition: Excellence Award – 2023</span></li>
-        </ul>
+        <h3>代码仓库 Code Repository</h3>
+        <p>我将在 <a href="https://github.com/你的GitHub用户名">GitHub</a> 上陆续上传项目代码。目前部分项目代码可应要求提供。</p>
+        <p class="en">I will gradually upload project codes on <a href="https://github.com/你的GitHub用户名">GitHub</a>. Some project codes are available upon request.</p>
 
-        <!-- 5. 技能 -->
-        <h2><a id="skills" class="anchor" href="#skills" aria-hidden="true"><span class="octicon octicon-link"></span></a>技能 · Skills</h2>
-        <ul>
-          <li><strong>GIS软件：</strong>ArcGIS、Supermap、MapGIS 及空间分析工具<br>
-          <span class="en"><strong>GIS Software:</strong> ArcGIS, Supermap, MapGIS and spatial analysis tools</span></li>
-          <li><strong>编程语言：</strong>R、Python、MATLAB（数据处理与建模）<br>
-          <span class="en"><strong>Programming:</strong> R, Python, MATLAB (data processing and modeling)</span></li>
-          <li><strong>证书：</strong>全国计算机等级二级、MapGIS制图工程师、英语六级（CET-6）<br>
-          <span class="en"><strong>Certificates:</strong> National Computer Rank Examination Level 2, MapGIS Cartographic Engineer, CET-6</span></li>
-        </ul>
+        <hr>
+        <h3>示例代码片段 · Example Code Snippet</h3>
+        <p>以下是一个简单的R代码示例，用于计算SPI指数（干旱指数）：</p>
+        <p class="en">Below is a simple R code snippet for calculating the SPI (Standardized Precipitation Index) drought index:</p>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:5px;">
+          <code>
+# 安装并加载SPEI包
+install.packages("SPEI")
+library(SPEI)
+
+# 假设 precipitation 为月降水数据向量
+precipitation <- c(...)   # 替换为实际数据
+spi_result <- spi(precipitation, scale = 12)  # 12个月尺度
+print(spi_result)
+          </code>
+        </pre>
+        <p>更多代码示例敬请期待。</p>
+        <p class="en">More code examples coming soon.</p>
       </section>
     </div>
-
-    <!-- 缩放修复脚本（来自原模板） -->
     <script src="javascripts/scale.fix.js"></script>
-    <!-- 折叠面板交互（保留，但本页未使用，可留作后续扩展） -->
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      for (var i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        };
-      }
-    </script>
   </body>
 </html>

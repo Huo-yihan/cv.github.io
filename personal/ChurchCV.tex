@@ -1,15 +1,11 @@
-\documentclass[11pt,english]{article}
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{ctex}          % 中文支持
 \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
 \usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{babel}
-%\usepackage[garamondx,bigdelims]{newtxmath}
-%\usepackage{garamondx}
-%\usepackage{mathpazo}
-%\usepackage{mathptmx}
 \usepackage{newcent}
 
-% Colors: see  http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html
+% Colors
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
 \definecolor{oucrimson}   {RGB}{132.,22. ,23. }
@@ -20,51 +16,44 @@
 
 % Layout
 \usepackage{multirow}
-\usepackage{setspace} %singlespacing; onehalfspacing; doublespacing; setstretch{1.1}
+\usepackage{setspace}
 \setstretch{1.5}
-\usepackage[verbose,margin=1in]{geometry} % Margins
-\setlength{\headheight}{15pt} % Sufficent room for headers
-\usepackage[bottom]{footmisc} % Forces footnotes on bottom
+\usepackage[verbose,margin=1in]{geometry}
+\setlength{\headheight}{15pt}
+\usepackage[bottom]{footmisc}
 
 % Headers/Footers
-%\usepackage{datenumber}
 \usepackage{lastpage}
 \setlength{\headheight}{0pt}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \lhead{} \chead{} \rhead{}
-%\lfoot{Job Market Candidate - Duke University Department of Economics \\ \datemonthname~\the\year} \cfoot{}
 \lfoot{\today} \cfoot{}
 \rfoot{Page \thepage \,of \pageref{LastPage}}
 
 % Useful Packages
-%\usepackage{bookmark} % For speedier bookmarks
-%\usepackage{amsthm}   % For detailed theorems
-%\usepackage{amssymb}  % For fancy math symbols
-%\usepackage{amsmath}  % For awesome equations/equation arrays
-\usepackage{array}    % For tubular tables
+\usepackage{array}
 \usepackage{booktabs}
-\usepackage{longtable}% For long tables
-\usepackage[flushleft]{threeparttable} % For three-part tables
-\usepackage{multicol} % For multi-column cells
-\usepackage{graphicx} % For shiny pictures
-\usepackage{subfig}   % For sub-shiny pictures
-\usepackage{enumerate}% For cusomtizable lists
-%\usepackage{pstricks,pst-node,pst-tree,pst-plot} % For trees
+\usepackage{longtable}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{enumerate}
 
 % Bib
-\usepackage[authoryear]{natbib} % Bibliography
-\usepackage{url}                % Allows urls in bib
+\usepackage[authoryear]{natbib}
+\usepackage{url}
 
 % TOC
 \setcounter{tocdepth}{4}
 
 % Links
-\usepackage{hyperref}    % Always add hyperref (almost) last
+\usepackage{hyperref}
 \hypersetup{colorlinks,breaklinks,citecolor=black,filecolor=black,linkcolor=oucrimson,urlcolor=oucrimson}
-\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
-\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+\usepackage[all]{hypcap}
+\usepackage{breakurl}
 
 % Custom commands
 \newcommand{\makeheading}[2]%
@@ -81,48 +70,32 @@
         \vspace{1.0\baselineskip}%
         \phantomsection\addcontentsline{toc}{section}{#1}%
         \hspace{0in}%
-        %\marginpar{\raggedright \scshape #1}#2}
-        %\rule[3.5pt]{0.9in}{1.5pt} ~~
         {\raggedright \scshape \large \textbf{#1}}%
         \vspace{0.25\baselineskip}#2
 }
 
-
 \begin{document}
-%\thispagestyle{empty}
-\makeheading{TYLER M. RANSOM}{CV of Church Service}
+
+\makeheading{霍一韩 Yihan Huo}{志愿者与社团经历 Volunteer \& Club Experience}
 
 \setstretch{1.2}
-
 \bigskip\par
-The following is a complete history of volunteer leadership and teaching positions I have held in my local congregation of the Church of Jesus Christ of Latter-day Saints. Each was formally approved by congregation members through vote.
 
-\section{Callings Held}\par
-% ==================================================================================
-\begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
-2025-- & Bishopric 1st Counselor, Noble Ward (Oklahoma)\\
-2023--2025 & Bishopric 1st Counselor, Norman 1st Ward (Oklahoma)\\
-2023 & Bishopric 2nd Counselor, Norman 1st Ward (Oklahoma)\\
-2022--2023 & Ward Financial Clerk, Norman 1st Ward (Oklahoma)\\
-2021--2022 & Early Morning Seminary Teacher, Noble / Norman 1st Wards (Oklahoma)\\
-2019--2021 & Elder's Quorum President, Noble Ward (Oklahoma)\\
-2019 & Youth Sunday School Teacher (ages 13--14), Noble Ward (Oklahoma)\\
-2019 & Young Men 2nd Counselor, Noble Ward (Oklahoma)\\
-2017--2019 & Scoutmaster (Boy Scouts), Noble Ward (Oklahoma)\\
-2015--2017 & Elder's Quorum 1st Counselor, Durham 1st Ward (North Carolina)\\
-2012--2015 & Ward Clerk, Durham 1st Ward (North Carolina)\\
-2011--2012 & Ward Membership Clerk, Durham 1st Ward (North Carolina)\\
-2009--2011 & Elder's Quorum Secretary, Durham 1st Ward (North Carolina) \\
-2008--2009 & Elder's Quorum President, BYU 59th Ward (Utah) \\
-2008--2009 & Temple Worker, Provo Temple (Utah) \\
-2008 & Emergency Preparedness Committee, BYU 59th Ward (Utah)\\
-2007 & Webelos (Cub Scouts) Adviser, Heatheridge 3rd Ward (Utah)\\
-2007 & FHE Leader, BYU 129th (?) Ward (Utah) \\
-2004--2006 & Full-time Missionary (Nagoya, Japan) \\
-2003--2004 & Elder's Quorum 2nd Counselor, BYU 96th Ward  (Utah) \\
-2002--2003 & Priest's Quorum 1st Assistant, Heatheridge 3rd Ward  (Utah) \\
-2000--2001 & Teacher's Quorum President, Princeton 1st Ward  (New Jersey) \\
-1998--1999 & Deacon's Quorum President, Heatheridge 3rd Ward (Utah) \\
-1997--1998 & Deacon's Quorum 1st Counselor, Heatheridge 3rd Ward (Utah) \\
-\end{tabular}
+以下是在校期间参与的志愿者服务和社团活动，每项均经正式组织或机构认可。\\
+The following are volunteer and club activities I participated in during my college years, each formally recognized by the respective organization.
+
+\section{活动经历 Activities}
+
+\paragraph{游泳协会（秘书部部长）Swimming Association (Secretary)} \hfill 2022.04 -- 2022.11 \\
+中文：多次举办组织急救专业知识活动，吸引500余名同学参与，增加学生对急救知识的了解和实践。同时负责迎新招募新社员，统计社员数据并制订迎新活动。\\
+English: Organized multiple first-aid professional knowledge activities, attracting over 500 students, enhancing students' understanding and practice of first aid. Also responsible for recruiting new members, compiling member data, and planning orientation activities.
+
+\paragraph{Supermap 校园大使 Supermap Campus Ambassador} \hfill 2023.09 -- 2024.06 \\
+中文：承担2024上半年Supermap大赛校园宣传活动，参加2024年5月的校内组织培训。\\
+English: Undertook campus promotion for the Supermap Competition in the first half of 2024, participated in on-campus organizational training in May 2024.
+
+\paragraph{学生助理 Student Assistant} \hfill 2022.09 -- 2024.12 \\
+中文：对教学楼的多媒体设备进行维护，解决故障问题。负责教室借用维修相关文件的收发、登记和归档工作，累积志愿时长超过200小时。\\
+English: Maintained multimedia equipment in teaching buildings and resolved faults. Responsible for receiving, registering, and archiving documents related to classroom borrowing and maintenance. Accumulated over 200 hours of volunteer service.
+
 \end{document}
